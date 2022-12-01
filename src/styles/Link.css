@@ -1,0 +1,19 @@
+.link {
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 1px solid var(--main);
+    border-radius: 15px;
+    color: var(--main);
+    font-size: 16px;
+    background: none;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.link:hover {
+    border: none;
+    background: var(--main);
+    color: white;
+}

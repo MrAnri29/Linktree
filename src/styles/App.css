@@ -1,0 +1,67 @@
+/* FONTS */
+
+/* COLORS */
+:root {
+    --primary: #6f0000;
+    --accent: #200122;
+    --main: #DD0000;
+}
+
+/* MAIN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--primary) 40%, var(--accent));
+    background-repeat: no-repeat;
+}
+
+.App-wrapper {
+    margin: 5vh;
+    width: 600px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 #00000033;
+    backdrop-filter: blur(3px);
+    padding-bottom: 20px;
+}
+
+.photo {
+    margin: 20px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background-image: url("../public/assets/images/photo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desc {
+    margin-top: -15px;
+    color: #FAFAFA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 350px) {
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+}
